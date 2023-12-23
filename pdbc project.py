@@ -78,14 +78,14 @@ while True:
             ch2 = int(input("1. Sort by roll no \t\t2. Sort by Desc Roll No\n3. Sort by Marks\t\t4. Sort by Desc Marks\n5.Sort by Name\t\t6. Sort by Des Name"))
             match ch2:
                 case 1:
-                    print("Sort by Roll No")
+                    print("Sort by Roll No (Ascending) ")
                     curs.execute("Select * from stud order by rn")
                     print("roll no\tname\tmarks")
                     for row in curs:
                         print(row[0],'\t',row[1],'\t',row[2])
 
                 case 2:
-                    print("Sort by Roll No")
+                    print("Sort by Roll No (Descending) ")
                     curs.execute("Select * from stud order by rn desc")
                     print("roll no\tname\tmarks")
                     for row in curs:
