@@ -1,3 +1,5 @@
+#This is a menu driven mini project in SQLAlchemy
+
 from sqlalchemy import *
 from sqlalchemy.orm import declarative_base, sessionmaker
 DB_URL= "mysql://root:root@localhost:3306/db2"
